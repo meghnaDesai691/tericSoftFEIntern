@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Year and textbooks</title>
+</head>
+<style>
+    .ulclass{
+        list-style-type: none;
+        margin:0;
+        padding:0;
+        overflow:hidden;
+        background-color: #ffccbb;
+    }
+    .ulli{
+        float:left;
+        margin: 10px;
+    }
+    a .ulli:hover{
+        color:aliceblue;
+    }
+    .dropdown {
+        position:relative;
+        display: inline-block;
+    }
+    .dropbtn{
+        
+       
+        padding:16px;
+        border:none;
+        cursor: pointer;
+    }
+    .dropdown-content{
+        display:none;
+        position:absolute;
+        background-color: #f9f9f9;
+        min-width:160px;
+        box-shadow: 0 8 16 0 rgba(0,0,0,0.2);
+        z-index:1;
+    }
+    .dropdown-content a{
+        color:black;
+        padding:12 16;
+        text-decoration: none;
+        display:block;
+    }
+.dropdown-content a:hover{
+    background-color: pink}
+.dropdown:hover .dropdown-content {
+display: block;
+}
+.dropdown:hover .dropbtn {
+background-color: #3e8e41;
+}
+    
+</style>
+<body>
+    <ul class="ulclass active">
+        <a href="#home">
+            <li class="ulli">
+            Home
+        </li></a>
+       <a href="#contact"> <li class="ulli">contact</li></a>
+       <a href="#aboutus"> <li class="ulli">about Us</li></a>
+       <a href="#dropdown-content"></a>
+       <div class="dropdown">
+        <button class="dropbtn">links</button>
+        <select class="dropdown-content">
+            <option><a href="tb_img.png">Link 1</a></option>
+            <option><a href="tb_img.png">Link 2</a></option>
+            <option><a href="tb_img.png">Link 3</a></option>
+        </select>
+    </div>
+    </ul>
+    
+
+    <section id="home">Home! hi i am home
+    <ol type="A">
+        <li style="color: rgb(31, 31, 196);">First year</li>
+        <ul>
+            <li style=" color:pink">
+                I semester
+            </li>
+            <ol type="1">
+                <li>Engg Chemistry</li>
+                <li>BEE</li>
+                <li>English</li>
+                <li>Mathematics 1</li>
+            </ol>
+            <li style="color:brown;">II semester</li>
+            <ol type="1" start="5">
+                <li>PPS</li>
+                <li>EG</li>
+                <li>Ap</li>
+                <li>Mathematics 2</li> 
+            </ol>
+        </ul>
+        <!----2nd year-------------------->
+        <li style="color: rgb(31, 31, 196);">Second year</li>
+        <ul>
+            <li style=" color:pink">
+                I semester
+            </li>
+            <ol type="1">
+                <li>ADE</li>
+                <li>C++</li>
+                <li>COSM</li>
+                <li>COA</li>
+                <li>DS</li>
+            </ol>
+            <li style="color:brown;">II semester</li>
+            <ol type="1" start="5">
+                <li>Java</li>
+                <li>Befa</li>
+                <li>DBMS</li>
+                <li>OS</li> 
+                <li>DM</li>
+            </ol>
+        </ul>
+        <!------------3rd year---------->
+        <li style="color: rgb(31, 31, 196);">Third year</li>
+        <ul>
+            <li style=" color:pink">
+                I semester
+            </li>
+            <ol type="1">
+                <li>WT</li>
+                <li>CN</li>
+                <li>SE</li>
+                <li>DSE</li>
+                <li>SN</li>
+            </ol>
+            <li style="color:brown;">II semester</li>
+            <ol type="5">
+                <li>sub1</li>
+                <li>sub2</li>
+                <li>sub3</li>
+                <li>sub4</li> 
+            </ol>
+        </ul>
+
+    </ol>
+    </section>
+    <section id="contact">hi i am contact
+        <li style="color: rgb(31, 31, 196);">Third year</li>
+        <ul>
+            <li style=" color:pink">
+                I semester
+            </li>
+            <ol type="1">
+                <li>WT</li>
+                <li>CN</li>
+                <li>SE</li>
+                <li>DSE</li>
+                <li>SN</li>
+            </ol>
+            <li style="color:brown;">II semester</li>
+            <ol type="5">
+                <li>sub1</li>
+                <li>sub2</li>
+                <li>sub3</li>
+                <li>sub4</li> 
+            </ol>
+        </ul>
+    </section>
+</body>
+</html>
