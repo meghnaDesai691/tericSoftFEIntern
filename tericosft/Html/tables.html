@@ -4,16 +4,24 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=>, initial-scale=1.0">
-    <title>Document</title>
+    <title>Tables</title>
+    <style>
+        tr:nth-child(odd) {
+            background-color: azure;
+        }
+        td:nth-child(odd),th:nth-child(odd){
+            background-color: rgb(21, 174, 174);
+        }
+    </style>
 </head>
 <body bgcolor="lightgrey">
-    <h1 style="font-size:50px">
+    <h1 style="font-size:30px">
     <table border="2" bordercolor="grey" cellspacing="10" cellpadding="10" align="center" bgcolor="lightblue">
         <tr>
-            <td style="color:brown">SNO</td>
-            <td style="color:brown">Subject name</td>
-            <td style="color:brown">TextBook Name</td>
-            <td style="color:brown">Textbook Link</td>
+            <th style="color:brown">SNO</th>
+            <th style="color:brown">Subject name</th>
+            <th style="color:brown">TextBook Name</th>
+            <th style="color:brown">Textbook Link</th>
         </tr>
         <tr>
             <td>1</td>
