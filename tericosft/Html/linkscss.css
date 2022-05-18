@@ -1,0 +1,21 @@
+h1{
+    background-color: #ee82ee;
+    color:white;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+a:link{
+    color:black;
+    padding:2px 20px 2px 20px;
+    margin:20px;
+    display:inline-block;
+    background-color: bisque;
+}
+a:hover{
+    color:rgba(226, 51, 208, 0.7);
+}
+a:active{
+    color:rgba(214, 226, 51, 0.894)
+}
+a:visited{
+    color:rgba(51, 226, 223, 0.7);
+}
