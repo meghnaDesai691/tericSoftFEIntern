@@ -14,14 +14,28 @@
            padding:20px;
            margin:2px;
         }
+        #myid1{
+           background-color: #a0f90663;
+           color:rgba(205, 22, 49, 0.492);
+           padding:20px;
+           margin:2px;
+        }
     </style>
+    
 </head>
     <div class = "myclass">I am based on my class styled code!</div>
-    
     <div id="myid">I am styled with myid id.</div>
     <div class = "myclass">I am taking from myclass as well!</div>
+    <div id="myid1">enter any number!</div><input type="text"/>
+    <input type ="button" onclick="script()"value="OK"/>
     <div>I have no style as i cannot take from already existing id:(</div>
 <body>
-    
+    <script>
+        function script(){
+        val = document.getElementById("myid1").innerHTML="changed!";
+        alert("i am called!");
+        }
+        
+    </script>
 </body>
 </html>
