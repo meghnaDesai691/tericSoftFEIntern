@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>JavaScript</title>
+    <link rel="icon" type ="image/x-icon" href="./images/logo_ts.jpg">
+</head>
+<body>
+    <h2>I am your date and time teller!</h2>
+    <p><button onclick="fun()">Click me to display time and date!</button></p>
+    <p>date and time : <span id ="date"> </span></p>
+    <h2>How to get input from the user!</h2>
+    <p>enter a number : <input type="text" id="inp"></p>
+    <button onclick="fun1()">Submit the number!</button>
+    <p id="print"></p>
+    <script>
+        function fun(){
+            document.getElementById("date").innerHTML=Date();
+            
+        }
+        function fun1(){
+            const val = document.getElementById("inp").value;
+            document.getElementById("print").textContent="Entered number is :"+val;
+        }
+    </script>
+    
+</body>
+</html>
