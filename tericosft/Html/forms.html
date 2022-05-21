@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Register with us&copy;tericsoft</title>
+    <link rel="icon" type="image/x-icon" href="./images/logo_ts.jpg">
+</head>
+<body bgcolor="lightblue">
+    <h1 style="text-align:center; font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;color:rgb(16, 129, 216)">Welcome!</h1>
+    <form name="registration" action="thankyou.html" target="_blank" method="GET" autocomplete="on">
+    <table cellspacing="20" align="center">
+        <tr>    
+            <td>First name</td> 
+            <td><input type="text" name="fname" size="30"></td>
+        </tr>
+        <tr>    
+            <td>Last name </td>
+            <td><input type="text" name="lname" size="30"></td>
+        </tr>
+        <tr>   
+            <td>Username</td> 
+            <td><input type="text" name="uname" size="30" required></td>
+        </tr>
+        <tr>
+            <td>Password</td>
+            <td><input type="password" name="password" required></td>
+        </tr>
+        <tr>
+            <td>Date of Birth</td>
+            <td><input type="date" name="dob"></td>
+        </tr>
+        <tr>
+            <td>Mail ID </td>
+            <td><input type="email" name="email" size="30" required></td>
+        </tr>
+        <tr>
+            <td>Phone number</td> 
+            <td><input type="text" name="phone" size="30" placeholder="Enter phone number with country code" required></td>
+        </tr>
+        <tr>
+            <td>Country</td>
+            <td><input type="text" name="country" size="30" value="India"></td>
+        </tr>
+        <tr>
+        <td>Sex</td>
+        <td>
+            <input type="radio" name="sex" size="10">Male<br>
+            <input type="radio" name="sex" size="10">Female<br>
+            <input type="radio" name="sex" size="10">Other<br>
+        </td>
+        </tr>
+        <tr>
+            <td><label for="age">Choose your age bracket:</label></td>
+            <td>
+            <select if="age" name="age">
+                
+                <option value="6-12">6-12</option><br>
+                <option value="13-17">13-17</option><br>
+                <option value="18-30">18-30</option><br>
+                <option value="31-60">31-60</option><br>
+                <option value="60+">60+</option><br>
+            </select>
+            </td>
+        </tr>
+        <tr>
+            <td>How did you know about us?</td>
+            <td>
+                    <input type="checkbox" name="info" size="10">Family and friends<br><br>
+                    <input type="checkbox" name="info" size="10">Advertisements<br><br>
+                    <input type="checkbox" name="info" size="10">Social Media<br><br>
+                    <input type="checkbox" name="info" size="10">Came across our website by chance<br><br>
+                    Other: <textarea placeholder="Please mention how you heard about us"></textarea><br>
+
+            </td>
+        </tr>
+        <tr>
+            
+            <td>
+                <input type="reset" style="margin:75px">
+            </td>
+        
+        
+        <td></td>
+            <td>
+                <input type="submit" >
+            </td>
+        </tr>
+        
+    </table>
+    </form>
+</body>
+</html>
