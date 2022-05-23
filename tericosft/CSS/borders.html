@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Borders</title>
+    <style>
+        p{
+            margin:50px 30px;
+            padding:20px;
+        }
+      p.dotall{
+          border-style:dotted;
+          border-width:medium;
+          border-left-color: aqua ;
+          border-right-color: #1a2def;  
+      }
+      p.doubleall{
+          border:5px double rgb(196, 26, 54);
+      }
+      p.leftonly{
+          border-style:groove;
+          border-left-width:9px;
+          border-color: black;
+      }
+    </style>
+</head>
+<body>
+    <p class="dotall">border dotted</p>
+    <p class="doubleall">border double</p>
+    <p class="leftonly">border with only left!</p>
+
+</body>
+</html>
