@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Align</title>
+    <style>
+        .left{
+            text-align:left;
+        }
+        .center{
+            position: absolute;
+            top:50%;
+            left:50%;
+           transform : translate(-50%,-50%);
+           -ms-transform: translate(-50%,-50%);
+        }
+        .right{
+         
+           position:fixed;
+           bottom:0;
+           right:0;
+
+        }
+        img{
+            display:block;
+            
+        }
+    </style>
+</head>
+<body>
+    <p class="left">This is left aligned!</p>
+   <img class="center" src="../Html/images/landscape.jpg" alt="image here"/>
+    <p class="right" >this is right aligned!</p>
+</body>
+</html>
