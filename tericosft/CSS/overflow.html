@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Overflow</title>
+    <style>
+        div{
+            margin:20px;
+            background-color: aqua;
+            width:300px;
+            height:160px;
+
+        }
+        div.scroll{
+            overflow:scroll;
+        }
+        div.hidden{
+            overflow:hidden;
+        }
+        div.auto{
+            overflow: auto;
+        }
+        div.xy{
+            overflow-y:scroll;
+        }
+        h4{
+            background-color:aquamarine;
+            color:rgb(204, 22, 22);
+        }
+        h1{
+            text-align: center;
+           color:blue
+        }
+        
+    </style>
+</head>
+<body>
+    <h1>Overflow types and how to handle!</h1>
+    <h2>What is an overflow?</h2>
+    <p>Overflow is when the content is more than its box!</p>
+    <div class="overflown">
+    <p>the content is so much htgdu sgtdi ygwujdn hgdjn hdjandkhd hgdujsn
+        hdjsdjwh hghjsn jfksn jfkmc jsnnksnkshjds jsndksmdkwqhlwmdnjfb jbdkamslams
+        okbsquhdjsdn gduahndjsgdhan hdwujksnf gsfhabjsnka hwgdjndmsfk sbdjn jgdjsdnwhd
+        jgdwjfjwh jghdjndkajs jsdhanx kaoiqlamx gfsgav hgb hgdjanjwhuj guajxnamdnh
+        hdhjabdjgwj hgdwjnxskajdwk jsgdajknxdkshdw jwhqkndskdhs kshdkndksdh sjbdjs swmn
+        hbdsnkwk jnks ndksmd sjsndksnds ksndskmlsjd jdhjsn hdjsns jshdks jnks jdskdn jsndksm dksh
+    </p>
+    </div>
+    
+    <h4 style="margin-top:100px;">1.Scroll</h4>
+    <div class="scroll">
+        <p>the content is so much htgdu sgtdi ygwujdn hgdjn hdjandkhd hgdujsn
+            hdjsdjwh hghjsn jfksn jfkmc jsnnksnkshjds jsndksmdkwqhlwmdnjfb jbdkamslams
+            okbsquhdjsdn gduahndjsgdhan hdwujksnf gsfhabjsnka hwgdjndmsfk sbdjn jgdjsdnwhd
+            jgdwjfjwh jghdjndkajs jsdhanx kaoiqlamx gfsgav hgb hgdjanjwhuj guajxnamdnh
+            hdhjabdjgwj hgdwjnxskajdwk jsgdajknxdkshdw jwhqkndskdhs kshdkndksdh sjbdjs swmn
+            hbdsnkwk jnks ndksmd sjsndksnds ksndskmlsjd jdhjsn hdjsns jshdks jnks jdskdn jsndksm dksh
+        </p>
+     </div>
+     <h4>2.Hide it using hidden</h4>
+     <div class="hidden">
+        <p>the content is so much htgdu sgtdi ygwujdn hgdjn hdjandkhd hgdujsn
+            hdjsdjwh hghjsn jfksn jfkmc jsnnksnkshjds jsndksmdkwqhlwmdnjfb jbdkamslams
+            okbsquhdjsdn gduahndjsgdhan hdwujksnf gsfhabjsnka hwgdjndmsfk sbdjn jgdjsdnwhd
+            jgdwjfjwh jghdjndkajs jsdhanx kaoiqlamx gfsgav hgb hgdjanjwhuj guajxnamdnh
+            hdhjabdjgwj hgdwjnxskajdwk jsgdajknxdkshdw jwhqkndskdhs kshdkndksdh sjbdjs swmn
+            hbdsnkwk jnks ndksmd sjsndksnds ksndskmlsjd jdhjsn hdjsns jshdks jnks jdskdn jsndksm dksh
+        </p>
+     </div>
+     <h4>3.Add scroll only when required using auto</h4>
+     <div class="auto">
+        <p>the content is so much htgdu sgtdi ygwujdn hgdjn hdjandkhd hgdujsn
+            hdjsdjwh hghjsn jfksn jfkmc jsnnksnkshjds jsndksmdkwqhlwmdnjfb jbdkamslams
+            okbsquhdjsdn gduahndjsgdhan hdwujksnf gsfhabjsnka hwgdjndmsfk sbdjn jgdjsdnwhd
+            jgdwjfjwh jghdjndkajs jsdhanx kaoiqlamx gfsgav hgb hgdjanjwhuj guajxnamdnh
+            hdhjabdjgwj hgdwjnxskajdwk jsgdajknxdkshdw jwhqkndskdhs kshdkndksdh sjbdjs swmn
+            hbdsnkwk jnks ndksmd sjsndksnds ksndskmlsjd jdhjsn hdjsns jshdks jnks jdskdn jsndksm dksh
+        </p>
+     </div>
+     <h4>4.Adding only x and y scrollbars </h4>
+     <p>Horizontal and vertical only</p>
+     <p>In the example only the vertical scrollbar is added</p>
+     <div class="xy">
+        <p>the content is so much htgdu sgtdi ygwujdn hgdjn hdjandkhd hgdujsn
+            hdjsdjwh hghjsn jfksn jfkmc jsnnksnkshjds jsndksmdkwqhlwmdnjfb jbdkamslams
+            okbsquhdjsdn gduahndjsgdhan hdwujksnf gsfhabjsnka hwgdjndmsfk sbdjn jgdjsdnwhd eyghd wygduwjhe wgeyuqiey hwgeyquhsqh whgeuqhndgeh
+            jgdwjfjwh jghdjndkajs jsdhanx kaoiqlamx gfsgav hgb hgdjanjwhuj guajxnamdnh tygdbs wgdyub
+            hdhjabdjgwj hgdwjnxskajdwk jsgdajknxdkshdw jwhqkndskdhs kshdkndksdh sjbdjs swmn
+            hbdsnkwk jnks ndksmd sjsndksnds ksndskmlsjd jdhjsn hdjsns jshdks jnks jdskdn jsndksm dksh
+        </p>
+     </div>
+
+
+
+</body>
+</html>
