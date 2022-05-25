@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>z-image</title>
+    <style>
+        div.d1{
+            z-index: -1;
+            width:500px;
+            height:500px;
+        }
+        div.d2{
+            position: relative;
+            left:40px;
+            top:-480px;
+            right:-40px;
+            z-index:1;
+            width:80px;
+            height: 350px;
+         
+           
+        }
+        div.d3{
+            position: relative;
+            z-index: 2;
+            width:250px;
+            height: 250px;
+            top:-800px;
+            left:80px;
+            
+        }
+    </style>
+</head>
+<body>
+    <p >The images will come as the order they are inserted without the z-index factor.but with z-index we can make this!</p>
+    <div class="d1"><img src="https://www.bing.com/th?id=OIP.AlKa4Rcloiwzx8H66o4sawHaEo&w=316&h=197&c=8&rs=1&qlt=90&o=6&dpr=1.59&pid=3.1&rm=2" height="250px" width="400px"/></div>
+    <div class="d2"><img src="https://www.bing.com/th?id=OIP.irrQjU4alijWMh4rS4FoVQHaEK&w=333&h=187&c=8&rs=1&qlt=90&o=6&dpr=1.59&pid=3.1&rm=2" height="200px" width="300px"/></div>
+    <div class="d3"><img src="https://www.bing.com/th?id=OIP.uUBmT-1TZKYRMwybILJRlAHaEK&w=333&h=187&c=8&rs=1&qlt=90&o=6&dpr=1.59&pid=3.1&rm=2" height="150px" width="200px" /></div>
+    
+</body>
+</html>
