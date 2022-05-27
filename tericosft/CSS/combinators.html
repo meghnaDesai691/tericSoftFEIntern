@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Combinators</title>
+    <style>
+        div +p{
+            background-color:pink;
+        }
+        
+        div p{
+            background-color:red;
+        }
+        div~span{
+            background-color: lightblue;
+        }
+    </style>
+</head>
+<body>
+    <h1 style="text-align:center;">Combinators in CSS</h1>
+    <div>I am the parent div!
+        <p>I am child of div in red!</p>
+    </div>
+    <p>I am the next immediate sibling of the div in pink</p>
+    <p>I am not immediate but after the div so i have no color</p>
+    <span>I am in light blue in the next element of div</span>
+</body>
+</html>
