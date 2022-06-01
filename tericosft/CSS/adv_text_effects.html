@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text effects</title>
+    <style>
+        .hid{
+            height:20px;
+            width:200px;
+            border:2px solid blue;
+            text-overflow: ellipsis;
+            overflow:hidden;
+            white-space: nowrap;
+
+        }
+        .hid:hover{
+            overflow: visible;
+        }
+        .wrap{
+            width:90px;
+            height:200px;
+            word-wrap: break-word;
+            border:2px solid blue;
+        }
+        .break{
+            width:200px;
+            height:300px;
+            word-break: break-all;
+            border:2px solid blue;
+        }
+    </style>
+</head>
+<body>
+    <div class="hid">
+        Overflow to be hideen.hey i am hidden!
+    </div>
+    <div class="wrap">
+        Let us wrap this long set of words haha.
+    </div>
+    <div class="break">
+        WE will never break unless some of us have hyphesn with-in-their-text!
+    </div>
+    <div style="writing-mode:vertical-lr">
+    Hey i am writing mode</div>
+</body>
+</html>

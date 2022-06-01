@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gradients</title>
+    <style>
+       div{
+           height:400px;
+           width:500px;
+           line-height: 400px;
+           text-align: center;
+           font-size: 40px;
+           color:white;
+           margin:10px;
+          
+       }
+       .conic{
+        background-image: conic-gradient(red,yellow,purple,rgb(255, 102, 255));
+       }
+       .linear{
+           background-image: linear-gradient(to right bottom,green,blue,pink,purple);
+       }
+       .radial{
+           background-image: radial-gradient(yellow,navy,yellow,navy);
+       }
+    </style>
+</head>
+<body>
+    <div class="conic" title="conic-gradient()">
+        conic gradient
+    </div>
+    <div class="linear" title="linear-gradient()">
+        Linear Gradient
+    </div>
+    <div class="radial" title = "radia-gradient()">
+        radial Gradient
+    </div>
+
+</body>
+</html>

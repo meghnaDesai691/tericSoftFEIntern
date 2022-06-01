@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Counters</title>
+    <style>
+        body{
+            counter-reset: section;
+            
+        }
+        h1{
+            counter-reset: subsection;
+        }
+        h1::before{
+            counter-increment: section;
+            content: counter(section)"."  " "
+        }
+        h3::before{
+            counter-increment: subsection;
+            content:counter(subsection)" ""->"" "
+        }
+    </style>
+</head>
+<body>
+    <h1>Section of html</h1>
+    <h3>Introduction</h3>
+    <h3>Attributes</h3>
+    <h3>Colors</h3>
+    <h3>Forms</h3>
+    <h1>Sections of CSS</h1>
+    <h3>Borders</h3>
+    <h3>Background</h3>
+    <h3>Display</h3>
+    <h3>overflow</h3>
+    <h3>Selectors</h3>
+
+    <h2>Apart from them, lists can alse be used for counting the children</h2>
+    <ol>
+        <li>Things to get for tomorrow</li>
+        <ol>
+            <li>pizaa</li>
+            <li>Macroni</li>
+            <li>Burger</li>
+            <li>Happiness</li>
+        </ol>
+        <li>Clothes to get for tomorrow</li>
+        <ol>
+            <li>A white jeans</li>
+            <li>A denim jacket/li>
+                <li>A denim skirt</li>
+        </ol>
+    </ol>
+</body>
+</html>

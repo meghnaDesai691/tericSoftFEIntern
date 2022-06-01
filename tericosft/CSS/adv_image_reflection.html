@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Reflection</title>
+    <style>
+        img.hello{
+        -webkit-box-reflect:below 1px linear-gradient(to left,rgba(0,0,0,0.2),rgba(0,0,0,0.5));
+        
+        }
+        .center{
+            opacity:0;
+            text-align: center;
+            top:600px;
+            left:100px;
+            width:auto;
+            position: absolute;
+            padding:5px;
+            background-color: rgb(202, 42, 42);
+            transition: .5s ease-in;
+            color:white;
+            
+        }
+        .container{
+            height:200px;
+            width:200px;
+            position:absolute;
+        }
+        .container img.hi:hover{
+           opacity:0.4;
+        }
+        .container:hover .center{
+            opacity:1;
+
+        }
+        .hi{
+            position: relative;
+            transition: .5s ease;
+            top:400px;
+        }
+
+    </style>
+</head>
+<body>
+    <img class="hello" src="../Html/images/3rd_image.jpg"/>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <div class="container">
+        <img class="hi" src="../Html/images/landscape.jpg"/>
+        <div class="center" >Cha Eun Woo</div>
+    </div>
+    
+
+</body>
+</html>

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>forms styling</title>
+    <style>
+        div{
+            font-size:20px;
+            margin:10px;
+        }
+        input[type="text"]{
+            margin:20px 20px;
+            padding:10px 12px;
+            width:90%;
+
+        }
+        input[type="password"]{
+            margin:20px 20px;
+            padding:10px 12px;
+            width:90%;
+        }
+        select[id="country"]{
+            padding:10px 12px;
+            text-align: left;
+            font-size: 20px;
+            border-radius: 4%;
+            width: 92%;
+            margin:20px 20px;
+
+        }
+        select[id="country"]:hover{
+            background-color: lightslategray;
+        }
+        input:focus{
+            outline:none;
+           border : 3px rgb(32, 87, 67 ) solid;
+           background-color: rgb(32, 87, 67,0.5);
+        }
+        span input[type]{
+            font-size: 20px;
+            padding:10px 10px;
+            background-color: white;
+            color:rgb(44, 40, 40);
+
+        }
+        span input[type]:hover{
+            cursor:pointer;
+        }
+        
+        body{
+            background-color: rgb(62, 55, 55);
+            color:white;
+
+        }
+        
+
+    </style>
+</head>
+<body>
+    <div>First Name</div>
+    <div><input type="text" name="f_name" id="f_name" placeholder="type here..."></div>
+    <div>Last Name </div>
+    <div><input type="text" name="l_name" id="l_name" placeholder="type here..."></div>
+    <div>Password</div>
+    <div><input type="password" name="pass" id="pass" placeholder="type here..."></div>
+    <div>Country</div>
+    <select id="country" name="country" placeholder="India">
+        <option id="in" name="in">India</option>
+        <option id="au" name="au">Australia</option>
+        <option id="br" name="br">Brazil</option>
+        <option id="ja" name="ja">Japan</option>
+        <option id="ko" name="ko">South Korea</option>   
+    </select>
+    <br><br>c
+    <span style="margin-left:350px;">
+        <input type="submit" name="sub" id="sub">
+    </span>
+    <span style="float:right; margin-right:450px">
+        <input type="reset" name="re" id="re">
+    </span>
+    
+</body>
+</html>

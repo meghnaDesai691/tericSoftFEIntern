@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DropDown</title>
+    <style>
+        
+         ul{
+            margin:0;
+            padding:0;
+            background-color: black;
+            color:white;
+            list-style-type: none;
+            overflow: hidden;
+
+        }
+        li{
+            float:left;
+        }
+        .drop-content{
+           display:none;
+           position:absolute;
+            z-index: 1;   
+        }
+        li a{
+            text-decoration: none;
+            text-align: center;
+            padding:15px 15px;
+            color:white;
+        }
+        
+        .drop:hover  .drop-content {
+            display:block;
+        }
+        .drop-content a{
+            padding:12px 12px;
+            text-align: left;
+
+        }
+        li a:hover{
+            background-color:  rgb(132, 115, 115);;
+        }
+        li a:hover .drop-content a{
+            display:block;
+        }
+        .drop-content a{
+            display:block;
+            
+        }
+        li .drop-content a{
+            background-color: rgb(132, 115, 115);
+            
+            font-size:15px;
+            min-width: 120px;
+        
+        }
+        li a,.drop{
+            display:inline-block;
+        }
+        li .drop-content a:hover{
+            background-color:rgba(0,0,0,0.5);
+        }
+        
+    </style>
+</head>
+
+<body>
+      <ul>
+        <li class="drop"> 
+            <a class="drop-btn" href="#">HTML</a>
+          <div class="drop-content">
+              <a href="./align.html" target="_blank">Align</a>
+              <a href="./borders.html" target="_blank">Borders</a>
+              <a href="./icons.html" target="_blank">Icons</a>
+              <a href="./fonts.html" target="_blank">Fonts</a>
+          </div>
+        </li> 
+        <li class="drop">
+            <a class="drop_btn" href="#">CSS</a>
+          <div class="drop-content">
+              <a href="./pseudo_classes.html" target="_blank">Pseudo classes</a>
+              <a href="./display_css.html" target="_blank">display</a>
+              <a href="./float_clear.html" target="_blank">float and clear</a>
+              <a href="./z-index.html" target="_blank">Z-index</a>
+          </div>
+
+        </li>
+        <li><a href="../../index.html">Back to home</a></li>
+      </ul>
+     <div style="margin:350px 400px;font-size: 25px;">click on any menu to see the drop down!</div>
+      
+
+</body>
+</html>

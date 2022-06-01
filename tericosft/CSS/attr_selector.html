@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attribute selector in css</title>
+    <style>
+       
+        [class="myclass"]{
+            border : 7px solid blue;
+        }
+        [title~="tericsoft"]{
+            background-color: yellow;
+        }
+        [class|="phone"]{
+            border: 9px dotted yellowgreen;
+        }
+        [class$="end"]{
+            border : 10px solid gray;
+        }
+        [class$="myclass"]{
+            border : 3px dotted
+        }
+        [class^="my"]{
+            border : 20px solid lightcoral;
+        }
+        body{
+            background-color: cadetblue;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <a href="https://www.tericsoft.com" target="_parent" title="tericsoft is my company">Visit the website</a>
+        <br>
+        <a href = "./align.html" >align in css</a>
+        <br>
+        <div class="myclass"><img  src = "../Html/images/3rd_image.jpg" alt="image"/></div>
+       
+        <div class="notmyclass"><img  src = "../Html/images/tall_image.jpg" alt="image"/></div>
+        <div class="iend"><img  src = "../Html/images/logo_ts.jpg" alt="image"/></div>
+        <div class="myclass"><img  src = "../Html/images/landscape.jpg" alt="image"/></div>
+        <div class="phone-hy">THis is the hyphen class!</div>
+
+    </div>
+</body>
+</html>

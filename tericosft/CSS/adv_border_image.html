@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Border Images</title>
+    <style>
+        .b1{
+            border:8px solid transparent;
+            border-image: url("../../my_logo_image.jpg") 50 round;
+            width:200px;
+            height:200px;
+            line-height: 200px;
+            text-align: center;
+            padding:20px;
+            margin:10px;
+        }
+        .b2{
+            border :10px solid transparent;
+            border-image: url("../../my_logo_image.jpg") 20 stretch;
+            width:200px;
+            height:200px;
+            line-height: 200px;
+            text-align: center;
+            padding:20px;
+            margin:10px;
+        }
+        .b3{
+            border :10px solid transparent;
+            border-image: url("../../my_logo_image.jpg") 100 round;
+            width:200px;
+            height:200px;
+            line-height: 200px;
+            text-align: center;
+            padding:20px;
+            margin:10px;
+
+        }
+    </style>
+
+</head>
+<body>
+    <div class="b1">
+        gimme a border!
+    </div>
+    <div class="b2">
+        another one!
+    </div>
+    <div class="b3">
+        again!
+    </div>
+</body>
+</html>
