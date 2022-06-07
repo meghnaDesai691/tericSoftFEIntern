@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Operators, Syntaxes in JS</title>
+    <script>
+        function myfun(){
+            let a = document.getElementById("inp1").value;
+            let b = document.getElementById("inp2").value;
+            document.getElementById("res").innerHTML +=(a+b);
+        }
+    </script>
+</head>
+<body>
+    enter the word1 :<input id="inp1" type="text"/>
+    enter the word2: <input id="inp2" type="text"/>
+    <p id="res">Here is the answer:</p>
+    <button onclick="myfun()">Submit</button>
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>If else and switch</title>
+</head>
+<body>
+    <div>
+        Enter your age:
+        <input type="number" min="1" max ="150" id="age">
+        <br>
+        <button  onclick="find()">Submit</button>
+    </div>
+    <script>
+        function find(){
+        let age = document.getElementById("age").value;
+        if(age>=18){
+            document.writeln("<br><h2>eligible to vote</h2>");
+        }
+        else{
+            document.writeln("<br><h2>Not eligible to vote");
+        }
+        document.writeln("<br>the month calculation using switch case:")
+        const date = new Date(635468729303654);
+        switch(date.getMonth()){
+            case 0: document.writeln("<br>the month is:January" );break;
+            case 1: document.writeln("<br>the month is:Febraury" );break;
+            case 2: document.writeln("<br>the month is:March" );break;
+            case 3: document.writeln("<br>the month is:April" );break;
+            case 4: document.writeln("<br>the month is:May" );break;
+            case 5: document.writeln("<br>the month is:June" );break;
+            case 6: document.writeln("<br>the month is:July" );break;
+            case 7: document.writeln("<br>the month is:august" );break;
+            case 8: document.writeln("<br>the month is:September" );break;
+            case 9: document.writeln("<br>the month is:October" );break;
+            case 10: document.writeln("<br>the month is:November" );break;
+            case 11: document.writeln("<br>the month is:December" );break;
+            default: document.write("invalid month");
+            
+        }
+    }
+    </script>
+
+</body>
+</html>

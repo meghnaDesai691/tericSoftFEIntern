@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>String methods</title>
+</head>
+<body>
+    <h4 id="text"></h4>
+    <p id="slice"></p>
+    <p id="substr"></p>
+    <p id="substring"></p>
+    <p id="prop"></p>
+    <p id="length"></p>
+    <p id="replace"></p>
+    <p id="pad"></p>
+    <p id="char"></p>
+    <p id="indo"></p>
+    <p id="last"></p>
+    <p id="includes"></p>
+    <p id="search"></p>
+    <p id="strts"></p>
+    
+    <script>
+        let str = "hey i am sample  your sample text!";
+        document.getElementById("text").innerHTML = str;
+        document.getElementById("slice").innerHTML = "slice  : "+str.slice(6,10);
+        document.getElementById("substr").innerHTML = "substr  :"+str.substr(-12,-8);
+        document.getElementById("substring").innerHTML = "substring : "+str.substring(6,10);
+        document.getElementById("prop").innerHTML = "property access :"+str[7];
+        document.getElementById("length").innerHTML = "length :"+str.length;
+        document.getElementById("replace").innerHTML = "replace :"+str.replace("sample","example");
+        document.getElementById("pad").innerHTML = "padding  :"+str.padStart(5,"9");
+        document.getElementById("char").innerHTML = "char : "+    str.charAt(6);
+        document.getElementById("indo").innerHTML = " indexof : "+    str.indexOf("sample");
+        document.getElementById("last").innerHTML = "lastindexof :  "+    str.lastIndexOf("sample");
+        document.getElementById("includes").innerHTML = " includes : "+    str.includes("Hey");
+        document.getElementById("search").innerHTML = "search:  "+    str.search(/am/ig);
+        document.getElementById("").innerHTML = " starts with : "+    str.startsWith("hey i")
+
+    </script>
+</body>
+</html>
