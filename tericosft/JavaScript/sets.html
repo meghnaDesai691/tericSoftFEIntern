@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sets</title>
+</head>
+<body>
+    <script>
+        const set = new Set();
+        set.add("9");
+        set.add("90");
+        set.add("9");
+        set.add("89");
+        set.add("mango");
+        set.forEach((value)=>{document.writeln("<br>"+value);});
+        for(const v of set.values()){
+            document.writeln("<br>"+Math.round(v/7,3));
+        }
+        document.writeln("<br> the set has the number 100 - ? "+set.has(100));
+
+    </script>
+
+</body>
+</html>

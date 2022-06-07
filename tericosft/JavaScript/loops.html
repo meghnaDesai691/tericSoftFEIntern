@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For variants and while variants</title>
+</head>
+<body>
+    <script>
+        const arr = ["mango","volvo","cars","amazing","banana","chicoo","dragon fruit"];
+        for(fruit of arr){
+            document.writeln("<br>"+ fruit);
+        }
+        const arr2 = [23,90,87,67,5,567];
+        let sum =0;
+        let i=0;
+        for(i=2;i<arr2.length;i++){
+           sum+=arr2[i];
+        }
+        document.writeln("<br><h4>Printing only odd places numbers");
+        for(let i=0;i<arr2.length;i+=2){
+            document.writeln("<br>"+arr2[i]);
+        }
+        let age = 90;
+        let x = 0;
+        while(x!=age){
+            document.writeln("<br>living for "+ x +" years");
+            x+=6;
+        }
+
+    </script>
+</body>
+</html>

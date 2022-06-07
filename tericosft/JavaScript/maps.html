@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maps</title>
+</head>
+<body>
+    <script>
+        const map = new Map([
+            ["mango","fruit"],
+            ["papaya","fruit"],
+            ["oakra","veggie"],
+            ["tomato","fruit"],
+            ["milkshake","beverage"]
+        ])
+        map.set("coke","beverage");
+        document.writeln("<br> does the shop have coke? "+(map.has("coke")?"yes":"false"));
+        document.writeln("<br>what category does tomato fall in? "+"<h3>"+map.get("tomato")+"</h3>");
+        text = "";
+        for(let x of map.entries()){
+            text +=x+"<br>";
+        }
+        document.writeln(text);
+        
+
+    </script>
+</body>
+</html>
