@@ -1,0 +1,64 @@
+{
+  "employees": [
+    {
+      "id": 1,
+      "name": "meghna desai",
+      "email": "meghnad@gmail.com",
+      "phone": "765438926",
+      "dob": "2001-09-20T18:30:00.000Z",
+      "gender": "female",
+      "hobbies": [
+        "reading",
+        "dancing",
+        "Singing"
+      ]
+    },
+    {
+      "id": 6,
+      "name": "vishalakshi chakilam",
+      "email": "lakshi@i.com",
+      "phone": "98265362786",
+      "dob": "2001-11-10T16:39:11.000Z",
+      "gender": "male",
+      "hobbies": [
+        "Sleeping",
+        "reading",
+        "dancing"
+      ]
+    },
+    {
+      "id": 7,
+      "name": "anju",
+      "email": "anju@l.com",
+      "phone": "6354764826",
+      "dob": "2022-09-07T18:30:00.000Z",
+      "gender": "male",
+      "hobbies": [
+        "reading",
+        "Sleeping",
+        "Singing"
+      ]
+    },
+    {
+      "id": 8,
+      "name": "shravani",
+      "email": "shravani@idc.com",
+      "phone": "2323233223",
+      "dob": "2022-09-22T18:30:00.000Z",
+      "gender": "male",
+      "hobbies": []
+    },
+    {
+      "id": 9,
+      "name": "freshname",
+      "email": "freshname@fresh.com",
+      "phone": "4657896456",
+      "dob": "2022-09-08T18:30:00.000Z",
+      "gender": "male",
+      "hobbies": [
+        "reading",
+        "dancing"
+      ]
+    }
+  ]
+}
